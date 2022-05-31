@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us!</title>
+</head>
+<body style="background-color: orange;">
+    <h1><font size="+4" style="font-family: Helvetica; margin-left: 20px;">Contact Me</font></h1><hr>
+    <form action="?" method="post" id="contact" style="display: inline;float: left">
+        <h4>Your Name:</h4><input type="text" size="50">
+        <h4>Your Email:</h4><input type="email" size="50">
+        <label for="content"><h4>Content:</h4></label>
+
+<select id="content">
+  <option value="tech">Technical Question</option>
+  <option value="cloud">Cloud Consulting</option>
+  <option value="business">Business offer</option>
+  <option value="others">Others</option>
+</select>
+        <h4>Your Message:</h4>
+        <textarea name="message" id = "message" form="contact" rows="10" cols="50">Type your message here..</textarea>
+        <input type="submit" value="Send" style="display: block;height: 30px;padding-left: 20px;padding-right: 20px" onclick="alert('Your Message has been sent\n'+document.getElementById('message').value)">
+        <a href="index.html" style="margin-left:30px;margin-top:40px;padding-left:40px;padding-top: 20px;padding-right: 40px;padding-bottom: 20px;background-color: #1e71dd;width: 70px;display: block;text-decoration: none;">
+            Home
+        
+            
+        </a>
+    </form>
+    <div style="margin-left:100px;display: inline-block;">
+    <h2>Contact Information</h2>
+        <ul>
+                <li><font size="+1" style="font-family: 'Segoe UI';">E-mail: abdurrahmanresmi@gmail.com </font></li>
+                <li><font size="+1" style="font-family: 'Segoe UI';">Mobile Number: +90 535 400 72 47</font></li>
+                <li><font size="+1" style="font-family: 'Segoe UI';">Adress: Istanbul/Turkey</font></li>
+        </ul>
+    </div>
+
+    <style>
+        .logo{
+            height:50px;
+            width:50px;
+            margin: 20px;
+        }
+    </style>
+
+    <div style="margin-left: 100px;float:left;">
+        <h2>Our Social Media Accounts:</h2>
+        <a href="https://www.facebook.com/abmu2/" target="_blank"><img  class="logo" src="../Photos/facebook-svgrepo-com.svg" alt=""></a>
+      
+        <a href="https://twitter.com/abdurrahman_os_" target="_blank"><img  class="logo" src="../Photos/twitter-svgrepo-com.svg" alt=""></a>
+        
+    
+    </div>
+
+</body>
+</html>

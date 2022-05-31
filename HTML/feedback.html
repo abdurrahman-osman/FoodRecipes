@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .comment{
+            width: 100%;
+            background-color: white;
+            height: 50px;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+   
+        <h2>Leave a comment:</h2>
+        <h3 style="margin-bottom: 5px;">Your Name</h3>
+        <input type="text" id = "name"> <br>
+        <h3>Your Comment</h3>
+        <textarea name="comment" cols="40" rows="5" id="comment"></textarea>
+        <br>
+        <input type="submit" value="Send" onclick="
+            var div1 = document.getElementById('comments');
+            var div2 = document.createElement('div');
+            var h = document.createElement('div');
+            h.appendChild(document.createTextNode(document.getElementById('name').value+':'));
+            div2.appendChild(document.createTextNode(document.getElementById('comment').value));
+            div2.classList.add('comment');
+            div1.appendChild(h);
+            div1.appendChild(div2);
+            ">
+  
+   
+     <div class="comments" name="comments" id="comments" style="margin-top:50px;">
+        <h3>Comments:</h3>
+           
+     </div>
+
+
+</body>
+</html>
